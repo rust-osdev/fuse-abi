@@ -1,0 +1,26 @@
+[package]
+name = "fuse-abi"
+version = "0.1.0"
+authors = ["Martin Kröning <mkroening@posteo.net>"]
+edition = "2021"
+description = "FUSE device bindings."
+repository = "https://github.com/rust-osdev/fuse-abi"
+license = "MIT OR Apache-2.0"
+keywords = ["fuse", "macfuse", "virtio-fs", "filesystem", "abi"]
+categories = ["external-ffi-bindings", "no-std::no-alloc", "os::linux-apis", "os::macos-apis"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+num_enum = { version = "0.7", default-features = false, optional = true }
+zerocopy = { version = "0.7", default-features = false, optional = true }
+zerocopy-derive = { version = "0.7", optional = true }
+
+[features]
+default = ["linux"]
+linux = []
+macos = []
+num_enum = ["dep:num_enum"]
+zerocopy = ["dep:zerocopy", "dep:zerocopy-derive"]
