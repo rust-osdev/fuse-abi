@@ -18,4 +18,4 @@ gen() {
 
 gen include/linux.h -o src/linux.rs
 gen include/macos.h -o src/macos.rs -- -D __APPLE__
-git apply 0001-fix-add-zerocopy-support-for-__IncompleteArrayField.patch
+git apply patches/*

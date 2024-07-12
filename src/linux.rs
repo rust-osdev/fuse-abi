@@ -40,7 +40,7 @@ impl<T> ::core::fmt::Debug for __IncompleteArrayField<T> {
 }
 pub const FUSE_KERNEL_VERSION: u32 = 7;
 pub const FUSE_KERNEL_MINOR_VERSION: u32 = 40;
-pub const FUSE_ROOT_ID: u32 = 1;
+pub const FUSE_ROOT_ID: u64 = 1;
 pub const FATTR_MODE: u32 = 1;
 pub const FATTR_UID: u32 = 2;
 pub const FATTR_GID: u32 = 4;
