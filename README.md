@@ -4,7 +4,11 @@
 [![docs.rs](https://img.shields.io/docsrs/fuse-abi)](https://docs.rs/fuse-abi)
 [![CI](https://github.com/rust-osdev/fuse-abi/actions/workflows/ci.yml/badge.svg)](https://github.com/rust-osdev/fuse-abi/actions/workflows/ci.yml)
 
-This crate provides bindings to FUSE.
+This crate provides bindings to FUSE devices.
+
+For API documentation, see the [docs].
+
+[docs]: https://docs.rs/fuse-abi
 
 ## License
 
