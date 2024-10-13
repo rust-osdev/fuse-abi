@@ -15,8 +15,8 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
 num_enum = { version = "0.7", default-features = false, optional = true }
-zerocopy = { version = "0.7", default-features = false, optional = true }
-zerocopy-derive = { version = "0.7", optional = true }
+zerocopy = { version = "0.8", default-features = false, optional = true }
+zerocopy-derive = { version = "0.8", optional = true }
 
 [features]
 default = []

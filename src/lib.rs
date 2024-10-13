@@ -12,9 +12,10 @@
 //!   - [`num_enum::TryFromPrimitive`]
 //!   - [`num_enum::UnsafeFromPrimitive`]
 //! - `zerocopy` derives the following traits for all structs:
-//!   - [`zerocopy::FromZeroes`]
+//!   - [`zerocopy::KnownLayout`]
+//!   - [`zerocopy::Immutable`]
 //!   - [`zerocopy::FromBytes`]
-//!   - [`zerocopy::AsBytes`]
+//!   - [`zerocopy::IntoBytes`]
 
 #![no_std]
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]

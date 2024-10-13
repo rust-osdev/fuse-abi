@@ -12,7 +12,7 @@ gen() {
         --with-derive-partialeq \
         --with-derive-eq \
         --with-attribute-custom-enum '.*=#[cfg_attr(feature = "num_enum", derive(num_enum::IntoPrimitive,num_enum::TryFromPrimitive,num_enum::UnsafeFromPrimitive,))]' \
-        --with-attribute-custom-struct '.*=#[cfg_attr(feature = "zerocopy", derive(zerocopy_derive::FromZeroes,zerocopy_derive::FromBytes,zerocopy_derive::AsBytes,))]' \
+        --with-attribute-custom-struct '.*=#[cfg_attr(feature = "zerocopy", derive(zerocopy_derive::KnownLayout,zerocopy_derive::Immutable,zerocopy_derive::FromBytes,zerocopy_derive::IntoBytes,))]' \
         "$@"
 }
 
