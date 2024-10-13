@@ -7,7 +7,7 @@
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct __IncompleteArrayField<T>(::core::marker::PhantomData<T>, [T; 0]);
@@ -107,7 +107,7 @@ pub const CUSE_INIT_INFO_MAX: u32 = 4096;
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_attr {
@@ -166,7 +166,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_kstatfs {
@@ -212,7 +212,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_file_lock {
@@ -240,7 +240,7 @@ const _: () = {
     derive(
         num_enum::IntoPrimitive,
         num_enum::TryFromPrimitive,
-        num_enum::UnsafeFromPrimitive
+        num_enum::UnsafeFromPrimitive,
     )
 )]
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
@@ -298,7 +298,7 @@ pub enum fuse_opcode {
     derive(
         num_enum::IntoPrimitive,
         num_enum::TryFromPrimitive,
-        num_enum::UnsafeFromPrimitive
+        num_enum::UnsafeFromPrimitive,
     )
 )]
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
@@ -318,7 +318,7 @@ pub enum fuse_notify_code {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_entry_out {
@@ -356,7 +356,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_forget_in {
@@ -376,7 +376,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_forget_one {
@@ -399,7 +399,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_batch_forget_in {
@@ -422,7 +422,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_getattr_in {
@@ -447,7 +447,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_attr_out {
@@ -476,7 +476,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_getxtimes_out {
@@ -505,7 +505,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_mknod_in {
@@ -532,7 +532,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_mkdir_in {
@@ -554,7 +554,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_rename_in {
@@ -580,7 +580,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_exchange_in {
@@ -606,7 +606,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_link_in {
@@ -626,7 +626,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_setattr_in {
@@ -711,7 +711,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_open_in {
@@ -733,7 +733,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_create_in {
@@ -762,7 +762,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_open_out {
@@ -787,7 +787,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_release_in {
@@ -815,7 +815,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_flush_in {
@@ -843,7 +843,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_read_in {
@@ -879,7 +879,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_write_in {
@@ -916,7 +916,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_write_out {
@@ -939,7 +939,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_statfs_out {
@@ -958,7 +958,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_fsync_in {
@@ -983,7 +983,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_setxattr_in {
@@ -1012,7 +1012,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_getxattr_in {
@@ -1041,7 +1041,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_getxattr_out {
@@ -1064,7 +1064,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_lk_in {
@@ -1093,7 +1093,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_lk_out {
@@ -1112,7 +1112,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_access_in {
@@ -1135,7 +1135,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_init_in {
@@ -1162,7 +1162,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_init_out {
@@ -1200,7 +1200,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct cuse_init_in {
@@ -1227,7 +1227,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct cuse_init_out {
@@ -1271,7 +1271,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_interrupt_in {
@@ -1291,7 +1291,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_bmap_in {
@@ -1316,7 +1316,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_bmap_out {
@@ -1336,7 +1336,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_ioctl_in {
@@ -1368,7 +1368,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_ioctl_iovec {
@@ -1391,7 +1391,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_ioctl_out {
@@ -1420,7 +1420,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_poll_in {
@@ -1447,7 +1447,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_poll_out {
@@ -1470,7 +1470,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_poll_wakeup_out {
@@ -1492,7 +1492,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_fallocate_in {
@@ -1524,7 +1524,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_in_header {
@@ -1564,7 +1564,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_out_header {
@@ -1590,7 +1590,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_dirent {
@@ -1618,7 +1618,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_inval_inode_out {
@@ -1646,7 +1646,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_inval_entry_out {
@@ -1674,7 +1674,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_delete_out {
@@ -1704,7 +1704,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_store_out {
@@ -1734,7 +1734,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_retrieve_out {
@@ -1768,7 +1768,7 @@ const _: () = {
     derive(
         zerocopy_derive::FromZeroes,
         zerocopy_derive::FromBytes,
-        zerocopy_derive::AsBytes
+        zerocopy_derive::AsBytes,
     )
 )]
 pub struct fuse_notify_retrieve_in {
