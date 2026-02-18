@@ -18,7 +18,7 @@
 //!   - [`zerocopy::IntoBytes`]
 
 #![no_std]
-#![cfg_attr(docsrs, feature(doc_auto_cfg))]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 #![allow(non_camel_case_types)]
 
 /// Linux FUSE device interface ([`fuse(4)`], [`linux/fuse.h`]).
