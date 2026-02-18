@@ -19,7 +19,7 @@ jobs:
         with:
           components: rustfmt
       - name: Install bindgen-cli
-        run: cargo install --git https://github.com/rust-lang/rust-bindgen.git --rev 9a8e5ca2f4089e21300fbea6b73e82efd7f18882 bindgen-cli
+        run: cargo install --locked bindgen-cli@0.72.1
       - run: ./bindgen.sh
       - run: git diff --exit-code
 
